@@ -4,6 +4,10 @@
 
 primera activity completa
 
+## Version 2
+
+Radio buttons 2 activity
+
 ## Enunciado
 
 Vamos a crear una app con icono (siempre visible en la actividad principal). El título de la

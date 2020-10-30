@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:text="@string/buttonNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_sexo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="nombre" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton_hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+    </RadioGroup>
+
+
 </android.support.constraint.ConstraintLayout>

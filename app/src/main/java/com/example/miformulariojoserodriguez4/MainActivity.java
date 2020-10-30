@@ -3,6 +3,7 @@ package com.example.miformulariojoserodriguez4;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,10 +20,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setIcon(R.mipmap.ic_icono);
 
         // Asociar elementos tipo "Visual" a tipo "codigo"
-        EditText editTextNombre=findViewById(R.id.editTextNombre);
+        final EditText editTextNombre=findViewById(R.id.editTextNombre);
         Button buttonNext=findViewById(R.id.buttonNext);
 
-        final String stringNombre=editTextNombre.getText().toString();
 
 
         // Esperar Evento del boton
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
              */
             @Override
             public void onClick(View v) {
+                Editable v_nombre = editTextNombre.getText();
+                final String stringNombre= editTextNombre.getText().toString();
                 // Creamos el Intent
                 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                 // Creamos el Bundle
